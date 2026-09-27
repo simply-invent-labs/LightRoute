@@ -1,0 +1,7 @@
+{
+  "cases": [
+    {"route": "/missing-title", "title": "", "description": "A sample page.", "issue": "missing title"},
+    {"route": "/bad-canonical", "title": "Bad canonical", "canonical": "not-a-url", "issue": "malformed canonical URL"},
+    {"route": "/missing-language", "title": "Missing language", "language": "", "issue": "missing language"}
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "cases": [
+    {"sourceRoute": "/docs", "href": "/docs/missing-page", "kind": "internal", "expected": "broken"},
+    {"sourceRoute": "/about", "href": "https://example.invalid/missing-resource", "kind": "external", "expected": "broken"}
+  ]
+}

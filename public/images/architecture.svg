@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" role="img" aria-labelledby="title desc">
+  <title id="title">LightRoute build flow</title>
+  <desc id="desc">A public React route passes through an allow list and becomes a Markdown file.</desc>
+  <rect width="720" height="180" rx="16" fill="#f0f5fa"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle" font-size="17" font-weight="600">
+    <rect x="24" y="55" width="180" height="70" rx="10" fill="#fff" stroke="#a9bfd2"/>
+    <text x="114" y="96" fill="#172a45">Public React route</text>
+    <rect x="270" y="55" width="180" height="70" rx="10" fill="#fff" stroke="#a9bfd2"/>
+    <text x="360" y="96" fill="#172a45">Allow list</text>
+    <rect x="516" y="55" width="180" height="70" rx="10" fill="#d9f4ec" stroke="#65bca8"/>
+    <text x="606" y="96" fill="#172a45">Markdown file</text>
+  </g>
+  <path d="M211 90h46m200 0h46" stroke="#237d72" stroke-width="4" marker-end="url(#arrow)"/>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10" fill="#237d72"/></marker></defs>
+</svg>

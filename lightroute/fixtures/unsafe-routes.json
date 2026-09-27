@@ -1,0 +1,4 @@
+{
+  "routes": ["../admin", "../../secret", "/private", "/admin", "/customer/123"],
+  "expected": "reject"
+}

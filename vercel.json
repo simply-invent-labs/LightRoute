@@ -1,8 +1,11 @@
 {
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/pricing", "destination": "/pricing.html" },
+    { "source": "/docs", "destination": "/docs.html" },
+    { "source": "/docs/getting-started", "destination": "/docs/getting-started.html" },
+    { "source": "/docs/installation", "destination": "/docs/installation.html" },
+    { "source": "/docs/api", "destination": "/docs/api.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

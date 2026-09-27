@@ -1,0 +1,21 @@
+{
+  "name": "lightroute",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:md": "node src/cli.js build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:fixtures": "vitest run tests/integration.test.js",
+    "verify:built-site": "node scripts/verify-built-site.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "turndown": "^7.2.0",
+    "turndown-plugin-gfm": "^1.0.2"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.11"
+  }
+}

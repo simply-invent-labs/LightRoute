@@ -2,7 +2,7 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { resolve, dirname, extname } from 'node:path';
 
 const root = resolve(import.meta.dirname, '..');
-const read = (path) => readFileSync(resolve(root, path), 'utf8');
+const read = (path) => readFileSync(resolve(root, path), 'utf8').replace(/\r\n/g, '\n');
 const routes = JSON.parse(read('lightroute/config/routes.json'));
 const config = JSON.parse(read('lightroute.config.json'));
 const router = read('src/routes/router.jsx');

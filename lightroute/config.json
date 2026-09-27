@@ -1,0 +1,9 @@
+{
+  "baseUrl": "https://lightroute-reference.vercel.app",
+  "outputDir": "./generated",
+  "language": "en",
+  "routes": {
+    "allow": ["/", "/about", "/pricing", "/docs", "/docs/getting-started", "/docs/installation", "/docs/api"],
+    "deny": ["/draft", "/private"]
+  }
+}

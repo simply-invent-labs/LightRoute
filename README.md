@@ -33,4 +33,4 @@ Excluded test routes: `/draft`, `/private`. They remain visitable in the React r
 
 `lightroute/fixtures/` holds separate negative examples for broken links, invalid metadata, and unsafe routes. The intentionally broken links are fixture data, not links rendered on the site.
 
-The actual LightRoute converter, crawler, CLI, deployment, and authentication are intentionally not implemented in this phase. The endpoint on the API page and pricing plans are sample documentation content.
+The Phase 2 extraction CLI is in `lightroute/` (see its README). The site build now emits static HTML for approved routes so the CLI can extract article content after deployment. The endpoint on the API page and pricing plans are sample documentation content.

@@ -1,6 +1,6 @@
 ---
-source: https://reference.lightroute.dev/
-canonical: https://reference.lightroute.dev/
+source: https://lightroute-phase2.vercel.app/
+canonical: https://lightroute-phase2.vercel.app/
 title: Home
 description: Explore a controlled website for testing LightRoute's future Markdown generation.
 language: en

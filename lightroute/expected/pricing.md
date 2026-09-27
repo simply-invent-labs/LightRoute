@@ -1,6 +1,6 @@
 ---
-source: https://reference.lightroute.dev/pricing
-canonical: https://reference.lightroute.dev/pricing
+source: https://lightroute-phase2.vercel.app/pricing
+canonical: https://lightroute-phase2.vercel.app/pricing
 title: Pricing
 description: Compare illustrative LightRoute plans in a sample pricing table.
 language: en

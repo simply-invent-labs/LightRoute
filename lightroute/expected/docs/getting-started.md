@@ -1,6 +1,6 @@
 ---
-source: https://reference.lightroute.dev/docs/getting-started
-canonical: https://reference.lightroute.dev/docs/getting-started
+source: https://lightroute-phase2.vercel.app/docs/getting-started
+canonical: https://lightroute-phase2.vercel.app/docs/getting-started
 title: Getting Started
 description: Learn how to get started with the LightRoute reference workflow.
 language: en

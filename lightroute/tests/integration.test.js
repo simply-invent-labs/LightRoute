@@ -7,7 +7,7 @@ import { buildRoute } from '../src/index.js';
 import { validateConfig } from '../src/config.js';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
-const baseUrl = 'https://lightroute-reference.vercel.app';
+const baseUrl = 'https://lightroute-phase2.vercel.app';
 const raw = JSON.parse(await readFile(path.join(root, 'config.json'), 'utf8'));
 
 describe('offline build and expected fixture structure', () => {

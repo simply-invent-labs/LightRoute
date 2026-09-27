@@ -1,5 +1,5 @@
 {
-  "baseUrl": "https://lightroute-reference.vercel.app",
+  "baseUrl": "https://lightroute-phase2.vercel.app",
   "outputDir": "./generated",
   "language": "en",
   "routes": {

@@ -1,6 +1,6 @@
 ---
-source: https://reference.lightroute.dev/about
-canonical: https://reference.lightroute.dev/about
+source: https://lightroute-phase2.vercel.app/about
+canonical: https://lightroute-phase2.vercel.app/about
 title: About
 description: Learn why the LightRoute reference site uses controlled public routes and fixtures.
 language: en

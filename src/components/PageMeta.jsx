@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const origin = 'https://reference.lightroute.dev';
+const origin = 'https://lightroute-phase2.vercel.app';
 
 export default function PageMeta({ title, description, path, language = 'en' }) {
   useEffect(() => {

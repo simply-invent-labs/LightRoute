@@ -2,6 +2,6 @@
   "allowedRoutes": ["/", "/about", "/pricing", "/docs", "/docs/getting-started", "/docs/installation", "/docs/api"],
   "excludedRoutes": ["/draft", "/private"],
   "outputDirectory": "lightroute/generated",
-  "canonicalSiteUrl": "https://reference.lightroute.dev",
+  "canonicalSiteUrl": "https://lightroute-phase2.vercel.app",
   "defaultLanguage": "en"
 }

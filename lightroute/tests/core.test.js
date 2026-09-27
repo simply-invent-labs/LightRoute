@@ -37,8 +37,8 @@ describe('route and configuration safety', () => {
 describe('content processing', () => {
   it('extracts metadata and safe frontmatter', () => {
     const html = '<html lang="fr"><head><title>A: "test"</title><meta name="description" content="Line one\n---"><link rel="canonical" href="/docs/api"></head></html>';
-    const meta = extractMetadata(html, 'https://lightroute-reference.vercel.app/docs/api');
-    expect(meta).toMatchObject({ title: 'A: "test"', language: 'fr', canonical: 'https://lightroute-reference.vercel.app/docs/api' });
+    const meta = extractMetadata(html, 'https://lightroute-phase2.vercel.app/docs/api');
+    expect(meta).toMatchObject({ title: 'A: "test"', language: 'fr', canonical: 'https://lightroute-phase2.vercel.app/docs/api' });
     expect(frontmatter(meta)).toContain('title: "A: \\"test\\""');
   });
   it('removes layout and refuses empty application shells', async () => {
@@ -55,7 +55,7 @@ describe('content processing', () => {
     expect(md).toContain('| Name | Type | Required | Description |');
     expect(md).toContain('```json');
     expect(md).toContain('> Illustrative documentation only.');
-    const special = htmlToMarkdown('<ul><li>One</li></ul><p><a href="https://lightroute-reference.vercel.app/docs/api">API</a> <a href="javascript:alert(1)">bad</a></p><img alt="Architecture" src="/images/architecture.svg"><img src="/no-alt.svg">', config.baseUrl);
+    const special = htmlToMarkdown('<ul><li>One</li></ul><p><a href="https://lightroute-phase2.vercel.app/docs/api">API</a> <a href="javascript:alert(1)">bad</a></p><img alt="Architecture" src="/images/architecture.svg"><img src="/no-alt.svg">', config.baseUrl);
     expect(special).toContain('[API](/docs/api)');
     expect(special).toContain('![Architecture](/images/architecture.svg)');
     expect(special).not.toMatch(/javascript:|no-alt/);
@@ -63,6 +63,6 @@ describe('content processing', () => {
   it('rejects unsafe redirects and non-HTML responses', async () => {
     const response = (url, type = 'text/html') => ({ ok: true, url, headers: new Headers({ 'content-type': type }), text: async () => '<main><article><h1>Test</h1><p>Some real content here.</p></article></main>' });
     await expect(fetchPage('/docs', config, async () => response('https://evil.example/docs'))).rejects.toThrow(/unsafe redirect/);
-    await expect(fetchPage('/docs', config, async () => response('https://lightroute-reference.vercel.app/docs', 'application/json'))).rejects.toThrow(/not HTML/);
+    await expect(fetchPage('/docs', config, async () => response('https://lightroute-phase2.vercel.app/docs', 'application/json'))).rejects.toThrow(/not HTML/);
   });
 });

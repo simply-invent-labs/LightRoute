@@ -1,6 +1,6 @@
 ---
-source: https://reference.lightroute.dev/docs/installation
-canonical: https://reference.lightroute.dev/docs/installation
+source: https://lightroute-phase2.vercel.app/docs/installation
+canonical: https://lightroute-phase2.vercel.app/docs/installation
 title: Installation
 description: Install and configure the LightRoute reference website.
 language: en

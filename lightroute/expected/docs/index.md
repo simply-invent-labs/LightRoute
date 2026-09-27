@@ -1,6 +1,6 @@
 ---
-source: https://reference.lightroute.dev/docs
-canonical: https://reference.lightroute.dev/docs
+source: https://lightroute-phase2.vercel.app/docs
+canonical: https://lightroute-phase2.vercel.app/docs
 title: Documentation
 description: Browse the LightRoute reference documentation and its public test routes.
 language: en

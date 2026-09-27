@@ -14,7 +14,7 @@ npm test
 npm run test:fixtures
 ```
 
-The CLI fetches `https://lightroute-reference.vercel.app` by default. Its current deployment still serves an empty React shell; live builds will fail until the updated reference site build is deployed. From the repository root, `npm run build` produces static HTML in `dist/` for all seven approved routes. Then `npm run verify:built-site` in this directory builds from that local HTML and verifies all seven outputs without relying on the deployment.
+The CLI fetches `https://lightroute-phase2.vercel.app` by default. From the repository root, `npm run build` produces static HTML in `dist/` for all seven approved routes. Then `npm run verify:built-site` in this directory builds from that local HTML without relying on the deployment.
 
 ## Configuration and architecture
 
@@ -28,4 +28,4 @@ Tests use local HTML fixtures for Getting Started, Installation, and API. They c
 
 ## Limitations and next phase
 
-Phase 2 processes HTML that already contains meaningful rendered content. It does not execute client-side JavaScript. Pages containing only an empty React application shell require prerendering, SSR, build-time content access, or a future rendering adapter. The included static site build provides prerendered HTML, but requires deployment before live CLI builds can succeed. There is no crawler, discovery, browser automation, backend, storage, or deployment pipeline in this package. Phase 3 can add a deployment and publishing path for approved Markdown once the static HTML deployment is verified.
+Phase 2 processes HTML that already contains meaningful rendered content. It does not execute client-side JavaScript. Pages containing only an empty React application shell require prerendering, SSR, build-time content access, or a future rendering adapter. The included static site build provides prerendered HTML. There is no crawler, discovery, browser automation, backend, or storage in this package. Phase 3 can add a publishing path for approved Markdown.

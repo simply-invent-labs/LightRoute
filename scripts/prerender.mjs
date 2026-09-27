@@ -5,7 +5,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { readFile, mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
-const origin = 'https://lightroute-reference.vercel.app';
+const origin = 'https://lightroute-phase2.vercel.app';
 const { routes: { allow: routes } } = JSON.parse(await readFile('lightroute/config.json', 'utf8'));
 const server = await createServer({ server: { middlewareMode: true }, appType: 'custom' });
 try {

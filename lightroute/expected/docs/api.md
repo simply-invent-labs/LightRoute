@@ -1,6 +1,6 @@
 ---
-source: https://reference.lightroute.dev/docs/api
-canonical: https://reference.lightroute.dev/docs/api
+source: https://lightroute-phase2.vercel.app/docs/api
+canonical: https://lightroute-phase2.vercel.app/docs/api
 title: API Reference
 description: Read sample endpoint-style documentation and parameters for LightRoute.
 language: en
@@ -24,7 +24,7 @@ Returns a sample description of an approved route. A real LightRoute implementat
 ### Example request
 
 ```shell
-curl https://reference.lightroute.dev/v1/routes/docs%2Fapi?format=markdown
+curl https://lightroute-phase2.vercel.app/v1/routes/docs%2Fapi?format=markdown
 ```
 
 ### Example response

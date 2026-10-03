@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 
-const origin = 'https://reference.lightroute.dev';
+const origin = 'https://example.com';
 
 export default function PageMeta({ title, description, path, language = 'en' }) {
   useEffect(() => {
-    document.title = `${title} | LightRoute`;
+    document.title = `${title} | Cedar Home`;
     document.documentElement.lang = language;
     const setMeta = (selector, key, value) => {
       let element = document.head.querySelector(selector);

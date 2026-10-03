@@ -22,6 +22,6 @@ export default function Router() {
     <Route path="/docs/api" element={<DocsLayout><Api /></DocsLayout>} />
     <Route path="/draft" element={<MainLayout><Draft /></MainLayout>} />
     <Route path="/private" element={<MainLayout><Private /></MainLayout>} />
-    <Route path="*" element={<MainLayout><h1>Page not found</h1><p>That reference route does not exist.</p></MainLayout>} />
+    <Route path="*" element={<MainLayout><h1>Page not found</h1><p>The page you are looking for is unavailable.</p></MainLayout>} />
   </Routes>;
 }
